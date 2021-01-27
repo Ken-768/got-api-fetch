@@ -1,38 +1,44 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    height: 100vh;
+body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: black;
+    display: flex;
     align-items: center;
-    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    justify-content: flex-start;
+    border-bottom: 1px solid #ccc;
+}
+header h1{
+    margin: 0 20px;
     color: #fff;
-    font-family: sans-serif;
 }
-.location,.temperature {
-    height: 30vh;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header a {
+    text-decoration: none;
 }
-.temperature {
-    flex-direction: column;
-}
-.degree-section {
+header form{
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
-.degree-section {
-    margin: 10px;
-    font-size: 30px;
+#search{
+    width: 230px;
+    height: 30px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 15px;
 }
-.degree-section h2 {
-    font-size: 40px;
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
